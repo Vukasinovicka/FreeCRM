@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="63.251016">
+<testcase classname="Add New Deal" name="Login Free CRM with Valid Credentials" time="16.593305">
+<system-out><![CDATA[Given User is on Application Page...........................................passed
+When Application Page Title is Free CRM.....................................passed
+Then User clicks log in button..............................................passed
+Then User enters username and password......................................passed
+And User clicks on Login button.............................................passed
+When User navigate to user profile..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Add New Deal" name="Login Free CRM with InValid Credentials" time="14.118237">
+<failure message="org.junit.ComparisonFailure: expected:&lt;[#1 Free CRM Power Up your Entire Business Free Forever]&gt; but was:&lt;[Cogmento CRM]&gt;&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:117)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:146)&#13;&#10;&#9;at StepDefinitions.MultiDealsSteps.application_Page_Title_is_Free_CRM(MultiDealsSteps.java:58)&#13;&#10;&#9;at ✽.When Application Page Title is Free CRM(src/test/java/Feature/Hooks.feature:22)&#13;&#10;"><![CDATA[Given User is on Application Page...........................................passed
+When Application Page Title is Free CRM.....................................passed
+Then User clicks log in button..............................................passed
+Then User enters username and password......................................passed
+And User clicks on Login button.............................................passed
+When Application Page Title is Free CRM.....................................failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<[#1 Free CRM Power Up your Entire Business Free Forever]> but was:<[Cogmento CRM]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at StepDefinitions.MultiDealsSteps.application_Page_Title_is_Free_CRM(MultiDealsSteps.java:58)
+	at ✽.When Application Page Title is Free CRM(src/test/java/Feature/Hooks.feature:22)
+]]></failure>
+</testcase>
+<testcase classname="Add New Deal" name="Add New  Multi Deal" time="32.539474">
+<system-out><![CDATA[Given User is on Application Page...........................................passed
+When Application Page Title is Free CRM.....................................passed
+Then User clicks log in button..............................................passed
+Then User enters username and password......................................passed
+And User clicks on Login button.............................................passed
+When User navigate to user profile..........................................passed
+Then Go to Deals............................................................passed
+Then Open New Deal form.....................................................passed
+Then user enters deal form..................................................passed
+Then Save the Deal..........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
